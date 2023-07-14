@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const {connection} = require("./config/db");
 const { Route } = require("./routes/fleksa.routes");
+require("dotenv").config();
 
 app.use(express.json());
 
